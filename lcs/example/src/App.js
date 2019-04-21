@@ -5,7 +5,6 @@ export default class App extends Component {
         return (
             <div>
                 <Button>Modern React component module</Button>
-                <button type="button" class="btn btn-primary">Primary</button>
             </div>
         )
     }

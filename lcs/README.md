@@ -13,19 +13,20 @@ npm install --save lcs
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
-
-import MyComponent from 'lcs'
+import React, { Component } from "react";
+import { Button } from "lcs";
 
 class Example extends Component {
-  render () {
-    return (
-      <MyComponent />
-    )
-  }
+    render () {
+        return (
+            <Button>I'm a meme</Button>
+        )
+    }
 }
 ```
 
 ## License
 
-MIT © [hackru](https://github.com/hackru)
+MIT © [HackRU](https://github.com/hackru) 2019
+
+`HackRU Frontend Team`
