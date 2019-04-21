@@ -9,25 +9,25 @@ import svgr from "@svgr/rollup"
 
 import pkg from "./package.json"
 
-let sourcemap = true;
+let sourceMap = false;
 
 export default {
-    input: "src/js/index.js",
+    input: "src/index.js",
     output: [
         {
             file: pkg.main,
             format: "cjs",
-            sourcemap: sourcemap
+            sourcemap: sourceMap
         }
     ],
     plugins: [
         external(),
         postcss({
-            modules: sourcemap
+            modules: sourceMap
         }),
         url(),
         sass({
-            output: pkg.styles
+            output: pkg.main.replace(".js", ".css")
         }),
         svgr(),
         babel({
