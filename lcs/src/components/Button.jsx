@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 class Button extends Component {
     render() {
         return (
-            <BsButton color="primary">S{this.props.children}</BsButton>
+            <BsButton color="primary">{this.props.children}</BsButton>
         )
     }
 }
