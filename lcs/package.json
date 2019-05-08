@@ -63,5 +63,8 @@
     },
     "files": [
         "dist"
-    ]
+    ],
+    "dependencies": {
+        "react-fa": "^5.0.0"
+    }
 }
