@@ -10,4 +10,4 @@ const GlowButton = ({ href, icon, text }) => (
     </Button>
 )
 
-export default GlowButton
+export default GlowButton;
