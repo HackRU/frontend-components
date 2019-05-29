@@ -20,7 +20,8 @@
         "dev": "concurrently --kill-others --names \" LCS , EXE \" -c \"bgBlue.bold,bgGreen.bold\" \"npm run dev:lcs\" \"npm run dev:exe\"",
         "prepare": "npm run build",
         "predeploy": "cd example && npm install && npm run build",
-        "deploy": "gh-pages -d example/build"
+        "deploy": "gh-pages -d example/build",
+        "postinstall": "rimraf package-lock.json"
     },
     "peerDependencies": {
         "prop-types": "^15.5.4",
@@ -30,7 +31,7 @@
     "devDependencies": {
         "@svgr/rollup": "^2.4.1",
         "babel-core": "^6.26.3",
-        "babel-eslint": "^8.2.5",
+        "babel-eslint": "^10.0.1",
         "babel-plugin-external-helpers": "^6.22.0",
         "babel-preset-env": "^1.7.0",
         "babel-preset-react": "^6.24.1",
@@ -63,5 +64,8 @@
     },
     "files": [
         "dist"
-    ]
+    ],
+    "dependencies": {
+        "core-js": "^3.1.3"
+    }
 }
