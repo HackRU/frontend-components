@@ -14,7 +14,10 @@
     "scripts": {
         "test": "cross-env CI=1 react-scripts test --env=jsdom",
         "test:watch": "react-scripts test --env=jsdom",
-        "build": "rollup -c",
+        "build:lcl": "rollup -c",
+        "build:exe": "cd example/ && npm run build",
+        "build:stg": "styleguidist build",
+        "build": "npm run build:lcl && npm run build:exe && npm run build:stg",
         "dev:lcl": "rollup -c -w",
         "dev:exe": "cd example/ && npm run start",
         "dev:stg": "styleguidist server",
