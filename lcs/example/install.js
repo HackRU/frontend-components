@@ -8,6 +8,6 @@ if (fs.existsSync("../package-lock.json")) {
     fs.unlinkSync("../package-lock.json");
 }
 // Remove the package-lock file from the current directory
-if (fs.existsSync("package-loc.json")) {
+if (fs.existsSync("package-lock.json")) {
     fs.unlinkSync("package-lock.json");
 }

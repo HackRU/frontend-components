@@ -21,7 +21,8 @@
         "prepare": "npm run build",
         "predeploy": "cd example && npm install && npm run build",
         "deploy": "gh-pages -d example/build",
-        "postinstall": "rimraf package-lock.json"
+        "postinstall": "rimraf package-lock.json",
+        "style": "styleguidist server"
     },
     "peerDependencies": {
         "prop-types": "^15.5.4",
@@ -29,6 +30,7 @@
         "react-dom": "^15.0.0 || ^16.0.0"
     },
     "devDependencies": {
+        "react-styleguidist": "^9.1.2",
         "@svgr/rollup": "^2.4.1",
         "babel-core": "^6.26.3",
         "babel-eslint": "^10.0.1",
