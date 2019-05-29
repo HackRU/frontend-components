@@ -21,3 +21,6 @@ styleguide
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Normally, I'd agree with you. You shouldn't put this file in the gitignore. BUT, there is a known issue with npm in regards to relative dependencies. The only fix is to remove this file
+package-lock.json

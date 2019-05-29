@@ -1,14 +1,23 @@
-# HackRU: Ludicrous Component Library
+# HackRU: Ludicrous Component Library (LCL)
 _"Everything is ludicrous!"_
 
+[![NPM](https://img.shields.io/npm/v/lcs.svg)](https://www.npmjs.com/package/lcs) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
 ## Quick Start
-```
-git clone blahb blah blah
-cd lcs
+Run the following commands:
+```bash
+git clone https://github.com/HackRU/ludicrous-hackru-components
+cd lcl
 npm install
-cd example
+cd examples
 npm install
 cd ..
 npm run dev
 ```
-> For the last npm run dev, if it crashes for the first run, restart npm run dev. This is because by default the dist directory doesn't exist, so react bugs out. After the restart, since the rollup build already ran once, the dist folder exists so it should work
+This will spawn three instances processes:
+![sdf](./docs/media/getting-started-01.png)
+## License
+
+MIT © [HackRU](https://github.com/hackru) 2019
+
+`HackRU Frontend Team`
