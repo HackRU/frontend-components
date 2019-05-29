@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button } from "lcs";
+import { Button } from "lcl";
 export default class App extends Component {
     render() {
         return (

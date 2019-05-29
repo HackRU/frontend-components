@@ -1,11 +1,11 @@
 {
-    "name": "lcs-example",
-    "homepage": "https://hackru.github.io/lcs",
+    "name": "lcl-example",
+    "homepage": "https://hackru.github.io/lcl",
     "version": "0.0.0",
     "license": "MIT",
     "private": true,
     "dependencies": {
-        "lcs": "file:..",
+        "lcl": "file:..",
         "prop-types": "^15.6.2",
         "react": "^16.4.1",
         "react-dom": "^16.4.1",
