@@ -16,8 +16,8 @@
         "build": "react-scripts build",
         "test": "react-scripts test --env=jsdom",
         "eject": "react-scripts eject",
-        "preinstall": "node preinstall.js",
-        "postinstall": "rimraf package-lock.json"
+        "preinstall": "node install.js",
+        "postinstall": "node install.js"
     },
     "devDependencies": {
         "rimraf": "^2.6.3"
