@@ -1,9 +1,9 @@
-$theme-colors: (
-    "primary": #00ff00,
-    "danger": #ff4136
-);
+@import "./theme.scss";
 
+//@font-face {
+//    font-family: "Doris";
+//    src: url(./fonts/Dosis/Dosis-Light.ttf) format('truetype');
+//}
+
+@import "../components/Button/Button.scss";
 @import "node_modules/bootstrap/scss/bootstrap";
-.name {
-    color: red !important;
-}
