@@ -17,12 +17,12 @@
         "build": "rollup -c",
         "dev:lcs": "rollup -c -w",
         "dev:exe": "cd example/ && npm run start",
-        "dev": "concurrently --kill-others --names \" LCS , EXE \" -c \"bgBlue.bold,bgGreen.bold\" \"npm run dev:lcs\" \"npm run dev:exe\"",
+        "dev:stg": "styleguidist server",
+        "dev": "concurrently --kill-others --names \" LCS , EXE , STG \" -c \"bgBlue.bold,bgGreen.bold,bgRed.bold\" \"npm run dev:lcs\" \"npm run dev:exe\" \"npm run dev:stg\"",
         "prepare": "npm run build",
         "predeploy": "cd example && npm install && npm run build",
         "deploy": "gh-pages -d example/build",
-        "postinstall": "rimraf package-lock.json",
-        "style": "styleguidist server"
+        "postinstall": "rimraf package-lock.json"
     },
     "peerDependencies": {
         "prop-types": "^15.5.4",
