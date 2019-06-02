@@ -1,5 +1,6 @@
 Button example:
 
 ```js
-<Button>Modern React component module</Button>
+<Button color='primary'> Primary Button! </Button>
+<Button color='secondary'> Secondary Button! </Button>
 ```

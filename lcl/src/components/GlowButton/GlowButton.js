@@ -1,10 +1,10 @@
 import React from 'react';
 import { Button } from "reactstrap";
-import { Icon } from "react-fa";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const GlowButton = ({ href, icon, text }) => (
     <Button href={href} className="glow-button" size="lg" color="info" outline>
-        <Icon size="2x" name={icon} />
+        <FontAwesomeIcon size="2x" name={icon} />
         <br/>
         { text }
     </Button>
