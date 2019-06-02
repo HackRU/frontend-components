@@ -5,13 +5,10 @@ Button example:
 
 <Button>Primary</Button>
 <Button color="secondary">Secondary</Button>
-<Button color="success">Secondary</Button>
-<Button color="danger">Secondary</Button>
-<Button color="warning">Secondary</Button>
-<Button color="info">Secondary</Button>
-<Button color="light">Secondary</Button>
-<Button color="dark">Secondary</Button>
-```
-```js
-<Button color="secondary">Test</Button>
+<Button color="success">Success</Button>
+<Button color="danger">Danger</Button>
+<Button color="warning">Warning</Button>
+<Button color="info">Info</Button>
+<Button color="light">Light</Button>
+<Button color="dark">Dark</Button>
 ```
