@@ -1,9 +1,28 @@
 /*
- * Main HackRU Themes: https://colorhunt.co/palette/146022
+ * Main HackRU Theme: https://colorhunt.co/palette/146022
  */
+// Define the theme colors
+$primary: #3884f2;
+$secondary: #303841;
+$info: #54c5f8;
+$white: #FFFFFF;
 $theme-colors: (
     "primary": #3884f2,
     "secondary": #303841,
     "info": #54c5f8,
     "white": #FFFFFF    
-)
+);
+$theme-colors-transparent: (
+    "primary": #3884f255,
+    "secondary": #30384155,
+    "info": #54c5f855,
+    "white": rgba(255, 255, 255, 0.3333333333)
+);
+// Define the theme font
+@font-face {
+    font-family: "Dosis";
+    src: url(fonts/Dosis.ttf) format("truetype");
+}
+$font-family-base: Dosis, sans-serif;
+// Override bootstrap variables
+$btn-border-radius: 0px;

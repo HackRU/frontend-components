@@ -1,3 +1,34 @@
-$btn-border-radius: 0px;
-$btn-link-hover-color: red;
-$btn-font-family: "Dosis", sans-serif;
+
+//$btn-overlay-effect: #FF80CF22;
+@each $color, $value in $theme-colors {
+    .lcl-btn-#{$color} {
+        position: relative;
+        background: none;
+        color: $value;
+    }
+    .lcl-btn-#{$color}:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: 0%;
+        left: 0%;
+        background: linear-gradient(to right, rgba(darken($value, 15%), 0.5), rgba(darken($value, 15%), 0.5), rgba(darken($value, 15%), 0.5));
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+    }
+    .lcl-btn-#{$color}:hover {
+        color: darken($value, 50%);
+    }
+    .lcl-btn-#{$color}:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+    .btn-#{$color}:hover {
+        background: none;
+    }
+}
