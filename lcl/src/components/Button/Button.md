@@ -1,8 +1,5 @@
-Button example:
-
+Standard bootstrap colors
 ```js
-<p>Default</p>
-
 <Button>Primary</Button>
 <Button color="secondary">Secondary</Button>
 <Button color="success">Success</Button>
@@ -11,4 +8,11 @@ Button example:
 <Button color="info">Info</Button>
 <Button color="light">Light</Button>
 <Button color="dark">Dark</Button>
+```
+HackRU styles
+```js
+<Button color="primary">Primary</Button>
+<Button color="info">Backup</Button>
+<Button color="secondary">Secondary</Button>
+<Button color="light">White</Button>
 ```
