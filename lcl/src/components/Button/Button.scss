@@ -32,3 +32,8 @@
         background: none;
     }
 }
+.lcl-btn-light {
+    position: relative;
+    background: none;
+    color: darken($white, 15%)
+}

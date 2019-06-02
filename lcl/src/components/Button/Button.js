@@ -5,6 +5,9 @@ import PropTypes from "prop-types";
 class Button extends Component {
     render() {
         let color = "primary";
+        if (this.props.color) {
+            color = this.props.color;
+        }
         return (
             <BsButton className={`lcl-btn-${color} ${this.props.className}`} color={color} style={this.props.style}>{this.props.children}</BsButton>
         )
