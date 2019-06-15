@@ -1,8 +1,8 @@
 language: node_js
 node_js:
-  - 9
-  - 8
+  - 11
 script:
   - cd lcl
+  - npm i
   - npm run lint
   - npm run build
