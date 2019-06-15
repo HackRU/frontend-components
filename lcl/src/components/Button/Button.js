@@ -11,5 +11,4 @@ const Button = ({ className, children, color, onClick, style }) => (
         {children}
     </BsButton>
 )
-
 export default Button;
