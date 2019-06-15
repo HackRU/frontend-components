@@ -4,6 +4,6 @@ node_js:
 script:
   - cd lcl
   - npm i
-  - cd examples && npm install && cd ..
+  - cd example && npm install && cd ..
   - npm run lint
   - npm run build
