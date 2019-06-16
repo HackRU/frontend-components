@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - 11
+script:
+  - cd lcl
+  - npm i
+  - cd example && npm install && cd ..
+  - npm run lint
+  - npm run build

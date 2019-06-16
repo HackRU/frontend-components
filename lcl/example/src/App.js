@@ -11,6 +11,6 @@ export default class App extends Component {
                 <Button>Sign Up</Button>
                 <GlowButton>Test</GlowButton>
             </div>
-        )
+        );
     }
 }

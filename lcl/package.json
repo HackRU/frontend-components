@@ -25,7 +25,9 @@
         "prepare": "npm run build",
         "predeploy": "cd example && npm install && npm run build",
         "deploy": "gh-pages -d example/build",
-        "postinstall": "rimraf package-lock.json"
+        "postinstall": "rimraf package-lock.json",
+        "lint": "eslint src/ example/src/",
+        "fix": "eslint src/ example/src/ --fix"
     },
     "peerDependencies": {
         "prop-types": "^15.5.4",
@@ -43,7 +45,7 @@
         "bootstrap": "^4.3.1",
         "concurrently": "^4.1.0",
         "cross-env": "^5.1.4",
-        "eslint": "^5.0.1",
+        "eslint": "^5.16.0",
         "eslint-config-standard": "^11.0.0",
         "eslint-config-standard-react": "^6.0.0",
         "eslint-plugin-import": "^2.13.0",
