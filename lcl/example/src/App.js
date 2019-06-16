@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button } from "lcl";
+import { Button, GlowButton } from "lcl";
 export default class App extends Component {
     render() {
         return (
@@ -9,6 +9,7 @@ export default class App extends Component {
                 <p>Testing</p>
                 <h1>HackRU</h1>
                 <Button>Sign Up</Button>
+                <GlowButton>Test</GlowButton>
             </div>
         )
     }
