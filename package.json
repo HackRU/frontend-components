@@ -22,7 +22,7 @@
         "dev:lcl": "rollup -c -w",
         "dev:exe": "cd example/ && npm run start",
         "dev:stg": "styleguidist server",
-        "dev": "cross-env SKIP_PREFLIGHT_CHECK=true concurrently --kill-others --names \" LCL , EXE , STG \" -c \"bgBlue.bold,bgGreen.bold,bgRed.bold\" \"npm run dev:lcl\" \"npm run dev:exe\" \"npm run dev:stg\"",
+        "dev": "npm run build:lcl && cross-env SKIP_PREFLIGHT_CHECK=true concurrently --restart-tries 3 --kill-others --names \" LCL , EXE , STG \" -c \"bgBlue.bold,bgGreen.bold,bgRed.bold\" \"npm run dev:lcl\" \"npm run dev:exe\" \"npm run dev:stg\"",
         "prepare": "npm run build",
         "predeploy": "cd example && npm install && npm run build",
         "postinstall": "rimraf package-lock.json"
