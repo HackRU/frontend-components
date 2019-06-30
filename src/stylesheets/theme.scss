@@ -23,6 +23,9 @@ $theme-colors-transparent: (
     font-family: "Titillium Web";
     src: url(./fonts/Titillium.ttf) format("truetype");
 }
-$font-family-base: Titillium Web, sans-serif;
+$font-family-sans-serif: Titillium Web, sans-serif !default;
+$font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:       $font-family-sans-serif !default;
 // Override bootstrap variables
 $btn-border-radius: 0px;

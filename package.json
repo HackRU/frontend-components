@@ -15,7 +15,7 @@
         "test": "cross-env CI=1 react-scripts test --env=jsdom",
         "test:watch": "react-scripts test --env=jsdom",
         "build:lcl": "rollup -c",
-        "build:exe": "cd example/ && npm run build",
+        "build:exe": "cd example/ && cross-env SKIP_PREFLIGHT_CHECK=true npm run build",
         "build:stg": "styleguidist build",
         "deploy": "gh-pages -d example/build",
         "build": "npm run build:lcl",
