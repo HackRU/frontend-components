@@ -20,9 +20,9 @@ $theme-colors-transparent: (
 );
 // Define the theme font
 @font-face {
-    font-family: "Dosis";
-    src: url(fonts/Dosis.ttf) format("truetype");
+    font-family: "Titillium Web";
+    src: url(./fonts/Titillium.ttf) format("truetype");
 }
-$font-family-base: Dosis, sans-serif;
+$font-family-base: Titillium Web, sans-serif;
 // Override bootstrap variables
 $btn-border-radius: 0px;

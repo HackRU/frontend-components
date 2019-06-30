@@ -43,10 +43,10 @@ export default {
         commonjs(),
         // Add static file references here
         copy({
-            targets: {
-                "src/assets/fonts/Dosis/Dosis-Regular.ttf": "dist/fonts/Dosis.ttf", // Copy over the theme default font
-                "src/assets/fonts/Dosis/OFL.txt": "dist/fonts/Dosis-OFL.txt" // Copy over the fonts license for legal reasons
-            }
+            targets: [
+                { src: "src/assets/fonts/Titillium/TitilliumWeb-Light.ttf", dest: "dist/fonts", rename: "Titillium.ttf" }, // Copy over the theme default font
+                { src: "src/assets/fonts/Titillium/OFL.txt", dest: "dist/fonts", rename: "Titillium-OFL.txt" } // Copy over the fonts license for legal reasons
+            ]
         })
     ]
 }
