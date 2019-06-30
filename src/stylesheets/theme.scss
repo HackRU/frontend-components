@@ -2,15 +2,15 @@
  * Main HackRU Theme: https://colorhunt.co/palette/146022
  */
 // Define the theme colors
-$primary: #3884f2;
-$secondary: #303841;
-$info: #54c5f8;
+$primary: #C85151;
+$secondary: #F1BA43;
+$info: #4FAB5F;
 $white: #FFFFFF;
 $theme-colors: (
-    "primary": #3884f2,
-    "secondary": #303841,
-    "info": #54c5f8,
-    "white": #FFFFFF
+    "primary": $primary,
+    "secondary": $secondary,
+    "info": $info,
+    "white": $white
 );
 $theme-colors-transparent: (
     "primary": #3884f255,
